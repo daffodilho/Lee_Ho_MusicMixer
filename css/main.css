@@ -1,23 +1,17 @@
-html
+body
 {
     background-image: url(/images/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
 }
 
 main
 {
     width: 500px;
-    height: 100%;
     margin: 0 auto;
     padding-top: 200px;
+	border: 1px solid red;
 }
-#machine
-{
-margin: 0 auto;
-}
-
 
 #row1
 {
@@ -28,14 +22,6 @@ margin: 0 auto;
     position: absolute;
     top: 255px;
     margin-left: 45px;
-    
-    /*z-index:2;*/
-}
-
-.delta-mud
-{
-width:70px;
-height: 150px;
 }
 
 .can
@@ -46,12 +32,11 @@ height: 150px;
     padding: 5px 10px 12px 0px;
 }
 
-#restart
+#dropzone
 {
- width: 120px;
-   height: 120px;
-   background-color: gray;
-  
-   float: right;
-
+	width: 310px;
+	height: 80px;
+	position: relative;
+	top: -165px;
+	left: 45px;
 }
