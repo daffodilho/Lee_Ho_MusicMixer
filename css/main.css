@@ -1,13 +1,18 @@
-body
+html
 {
     background-image: url(/images/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+    height: 100%;
+>>>>>>> 5ed24ebe0f8d3261c3a1849e15fcae27d596e87d
 }
 
 main
 {
     width: 500px;
+<<<<<<< HEAD
     margin: 0 auto;
     padding-top: 200px;
 	border: 1px solid red;
@@ -33,6 +38,46 @@ main
 }
 
 #dropzone
+=======
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+#machine
+{
+margin: 0 auto;
+}
+
+
+#row1
+{
+    width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 255px;
+    margin-left: 45px;
+    
+    /*z-index:2;*/
+}
+
+.delta-mud
+{
+width:70px;
+height: 150px;
+}
+
+.can
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 22%;
+    padding: 5px 10px 12px 0px;
+}
+
+#restart
+>>>>>>> 5ed24ebe0f8d3261c3a1849e15fcae27d596e87d
 {
 	width: 310px;
 	height: 80px;

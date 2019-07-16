@@ -1,5 +1,6 @@
 (()=>{
 	console.log("Trevor");
+<<<<<<< HEAD
 
 
 	const sodaCan = document.querySelector(".can"),
@@ -25,3 +26,9 @@
 	})
 	
 })();
+=======
+})();
+
+const bottleCan = document.querySelector(".can"),
+	  dropZone =  document.querySelector("#zone");
+>>>>>>> 5ed24ebe0f8d3261c3a1849e15fcae27d596e87d
