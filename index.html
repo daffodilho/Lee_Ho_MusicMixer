@@ -3,63 +3,75 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
 	
 	<title>Music Mixer</title>
 </head>
 
 <body>
     <main>
-       <header>
+       <header></header>
         <div id="machine"><img src="images/vending-machine.png" width="400" height="645"></div> 
            
         
         <section id="row1">     
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-            </div>
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-                
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-                
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-                
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-                
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                </div>
-                
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable>
-                </div>
-                
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true"></div>
-                
-            <div class="can"><img src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
-                
-                </div>
-        </section>
-          
-        
-        <div class="dropzone">
+            <div class="can">
+            <img id="canada-dry" data-drop="0" src="images/arb.png" alt="abstract rhythm beat" width="40" height="80" draggable="true">
+           
+            <img id="pepsi" data-drop="1" src="images/zoot-swing.png" alt="Zoot Swing" width="40" height="80" draggable="true">
             
-        </div>
+            <img id="fanta" data-drop="2" src="images/perc-combo.png" alt="Percussion" width="40" height="80" draggable="true">
+                
+            <img id="arizona" data-drop="3" src="images/bar-band.png" alt="Bar Band" width="40" height="80" draggable="true">
+                
+            <img id="rockstar" data-drop="4" src="images/delta-mud.png" alt="delta-mud" width="40" height="80" draggable="true">
+                
+            <img id="root-beer" data-drop="5" src="images/beach-run.png" alt="Beach Run" width="40" height="80" draggable="true">
+               
+                
+            <img id="coke" data-drop="6" src="images/chop-shop.png" alt="chop shop" width="40" height="80" draggable="true">
+            
+            <img id="welchs" data-drop="7" src="images/piano.png" alt="piano" width="40" height="80" draggable="true">
+                
+                
+            <img id="brisk" data-drop="8" src="images/bailey.png" alt="bailey" width="40" height="80" draggable="true">
+               
+                
+            <img id="flute" data-drop="9" src="images/flute.png" alt="flute" width="40" height="80" draggable="true">
+               
+                
+            <img id="orange" data-drop="10" src="images/kids.png" alt="sunkist" width="40" height="80" draggable="true">
+                  
+            <img id="milk" data-drop="11" src="images/sheep.png" alt="sheep" width="40" height="80" draggable="true">
+                
+                </div>
+		   </section>
         
-       </header>
+     
         
+        <div id="dropzone">
+            <div class="drop1"></div>
+            <div class="drop2"></div>
+            <div class="drop3"></div>
+		</div>
 
+  
+  <audio data-drop="0" src="audio/Abstract Rhythm Beat.wav"></audio>
+  <audio data-drop="1" src="audio/Zoot Swing Beat.wav"></audio>
+  <audio data-drop="2" src="audio/Percussion Combo 04.wav"></audio>
+  <audio data-drop="3" src="audio/Bar Band Basic Drumset 06.wav"></audio>
+  <audio data-drop="4" src="audio/Delta Mud Rhythm Guitar 03.wav"></audio>
+  <audio data-drop="5" src="audio/Beach Run Bass.wav"></audio>
+  <audio data-drop="6" src="audio/Chop Shop Synth.wav"></audio>
+  <audio data-drop="7" src="audio/Get Down Piano.wav"></audio>
+  <audio data-drop="8" src="audio/Bailey Background 03.wav"></audio>
+  <audio data-drop="9" src="audio/Jazz Hustle Flute 01.wav"></audio>
+  <audio data-drop="10" src="audio/Kids Cheering.wav"></audio>
+  <audio data-drop="11" src="audio/Sheep Bah.wav"></audio>
 
         
-    </main>	
+</main>	
 
 <script src="js/main.js"></script>
 </body>

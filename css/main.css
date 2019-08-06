@@ -1,23 +1,61 @@
 html
 {
-    background-image: url(/images/background.jpeg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 main
 {
     width: 500px;
-    height: 100%;
     margin: 0 auto;
     padding-top: 200px;
+	border: 1px solid red;
 }
+
+
+/******** machine ********/
+
+.can
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.can img
+{
+padding: 0px 10px 12px 10px;
+margin: 5px 20px 5px 5px;
+cursor: pointer;
+}
+
+.can img:hover
+{
+transform: rotate(320deg);
+-moz-transform: rotate(320deg);
+-o-transform: rotate(320deg);
+-webkit-transform: rotate(320deg);
+opacity: .5;
+}
+
+
+#dropzone
+{
+	width: 360px;
+    height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    top: 680px;
+    /*border: 2px solid green;*/
+}
+
 #machine
 {
 margin: 0 auto;
 }
-
 
 #row1
 {
@@ -38,20 +76,7 @@ width:70px;
 height: 150px;
 }
 
-.can
-{
-    display: flex;
-    flex-wrap: wrap;
-    width: 22%;
-    padding: 5px 10px 12px 0px;
-}
 
-#restart
-{
- width: 120px;
-   height: 120px;
-   background-color: gray;
-  
-   float: right;
-
-}
+#dropzone img
+{ width: 50px ! important;
+height: 90px ! important; }
