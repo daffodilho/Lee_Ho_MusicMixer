@@ -1,15 +1,101 @@
+@font-face {
+  font-family: 'billy';
+  src:  url('billy.woff2') format('woff2'),
+        url('billy.woff') format('woff');
+}
+
 html
 {
+    font-family: 'billy', sans-serif;
+    font-size: 16px;
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
+#reset
+{
+background: url(../images/coin.png) center no-repeat;
+width: 100px;
+height: 100px;
+border: none;
+background-size: cover;
+position: relative;
+}
+
+
+#popup
+{
+background: url(../images/question.png) center no-repeat;
+background-size: cover;
+width: 100px;
+height: 100px;
+position: relative;
+border: none;
+}
+
+#reset h1
+{
+display:none;
+}
+
+#reset:hover,
+{
+display:block;
+}
+
+
+.lightbox
+{
+width: 80%;
+height: 80%;
+position: fixed;
+left: 10%;
+top: 10%;
+background-color: rgba(255, 203, 5, 0.8);
+z-index: 10;
+display: none;
+text-align: center;
+}
+
+.lightbox h1
+{
+font-size: 4em;
+color: #000;
+margin: 30px 0;
+}
+
+.lightbox h2
+{
+    font-size: 3em;
+}
+
+.lightbox ul
+{
+    font-size: 2em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.show-lightbox
+{display: block;}
+
+.closebox
+{
+float:right;
+font-size: 50px;
+margin: 10px 10px 0px 0px;
+color: #f1f1f1;
+}
+
+
 main
 {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
-    padding-top: 200px;
+    /*padding-top: 200px;*/
 	border: 1px solid red;
 }
 
@@ -22,13 +108,13 @@ main
     flex-wrap: wrap;
     width: 100%;
     padding: 0px 0px 0px 0px;
-
+    margin-top: -115px;
 }
 
 .can img
 {
 padding: 0px 10px 12px 10px;
-margin: 5px 20px 5px 5px;
+margin: 0px 20px 5px 5px;
 cursor: pointer;
 }
 
@@ -48,7 +134,7 @@ opacity: .5;
     height: 80px;
     margin: 0 auto;
     position: absolute;
-    top: 680px;
+    top: 580px;
     /*border: 2px solid green;*/
 }
 
@@ -62,10 +148,10 @@ margin: 0 auto;
     width: 360px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     position: absolute;
-    top: 255px;
-    margin-left: 45px;
+    top: 277px;
+    margin-left: 35px;
     
     /*z-index:2;*/
 }
