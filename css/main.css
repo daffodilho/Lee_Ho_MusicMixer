@@ -13,6 +13,10 @@ html
     background-repeat: no-repeat;
 }
 
+.hidden
+{
+    display: none;
+}
 
 #reset
 {
