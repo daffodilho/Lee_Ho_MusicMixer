@@ -30,7 +30,7 @@
 
 	draggablePieces.forEach(piece => {
         piece.addEventListener("dragstart", function(e){
-            console.log('draggin...');
+            console.log("it's cold");
             
             //the dataTransfer object has two methods, a setter and getter
             //set data on the drag, and retrieve it on the drop
@@ -53,13 +53,13 @@
 	dropZone.forEach (zone =>{
 		zone.addEventListener("dragover", function(e) {
 			e.preventDefault(); 
-            console.log('dragged sumpin over me');
+            console.log('clink!');
 		});
 	
 			zone.addEventListener("drop", function(e) {
             	e.preventDefault(); 
 
-            	console.log('you dropped sumpin on me');
+            	console.log('clank!');
 
             
             	const currentDrop = document.querySelector(`img[data-drop="${e}"]`); //this data-drop// //`audio[data-key=`
