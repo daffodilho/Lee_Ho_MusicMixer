@@ -1,3 +1,4 @@
+![musicmixer](images/musicmixer.png)
 
 # Interactive Music Mixer
 
@@ -6,17 +7,22 @@ HTML Page containing drag and drop functunality to load audio and create dynamic
 
 ## Getting Started
 
-Here is some text about the app.
+### Dependencies
+
+Uses CSS3, HTML5 & JS.
+
+### Installing
+
+Cd to the directory of your choice, clone, and load index.html in any browser!
 
 ## Authors
 
-* **Daffodil** - *Designer* *Developer* 
+* **Daffodil** - *Designer* 
 * **Soyoon Lee** - *Developer* 
-
-
 
 ## Acknowledgments
 
-
 *  Design Inspiration - Pinterest
 *  Reference - incredibox.com
+
+
