@@ -16,54 +16,53 @@ html
 
 #reset
 {
-background: url(../images/coin.png) center no-repeat;
-width: 100px;
-height: 100px;
-border: none;
-background-size: cover;
-position: relative;
+    background: url(../images/coin.png) center no-repeat;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-size: cover;
+    position: relative;
 }
 
 
 #popup
 {
-background: url(../images/question.png) center no-repeat;
-background-size: cover;
-width: 100px;
-height: 100px;
-position: relative;
-border: none;
+    background: url(../images/question.png) center no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: none;
+}
+
+#reset:hover, #popup:hover
+{
+    cursor: pointer;
 }
 
 #reset h1
 {
-display:none;
+    display:none;
 }
-
-#reset:hover,
-{
-display:block;
-}
-
 
 .lightbox
 {
-width: 80%;
-height: 80%;
-position: fixed;
-left: 10%;
-top: 10%;
-background-color: rgba(255, 203, 5, 0.8);
-z-index: 10;
-display: none;
-text-align: center;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    background-color: rgba(255, 203, 5, 0.9);
+    z-index: 10;
+    display: none;
+    text-align: center;
 }
 
 .lightbox h1
 {
-font-size: 4em;
-color: #000;
-margin: 30px 0;
+    font-size: 4em;
+    color: #000;
+    margin: 30px 0;
 }
 
 .lightbox h2
@@ -84,10 +83,10 @@ margin: 30px 0;
 
 .closebox
 {
-float:right;
-font-size: 50px;
-margin: 10px 10px 0px 0px;
-color: #f1f1f1;
+    float:right;
+    font-size: 50px;
+    margin: 10px 10px 0px 0px;
+    color: #f1f1f1;
 }
 
 
@@ -95,13 +94,10 @@ main
 {
     width: 400px;
     margin: 0 auto;
-    /*padding-top: 200px;*/
-	border: 1px solid red;
 }
 
 
 /******** machine ********/
-
 .can
 {
     display: flex;
@@ -113,34 +109,33 @@ main
 
 .can img
 {
-padding: 0px 10px 12px 10px;
-margin: 0px 20px 5px 5px;
-cursor: pointer;
+    padding: 0px 10px 12px 10px;
+    margin: 0px 20px 5px 5px;
+    cursor: pointer;
 }
 
 .can img:hover
 {
-transform: rotate(320deg);
--moz-transform: rotate(320deg);
--o-transform: rotate(320deg);
--webkit-transform: rotate(320deg);
-opacity: .5;
+    transform: rotate(320deg);
+    -moz-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    -webkit-transform: rotate(320deg);
+    opacity: .5;
 }
 
 
 #dropzone
 {
-	width: 360px;
+	width: 350px;
     height: 80px;
-    margin: 0 auto;
     position: absolute;
     top: 580px;
-    /*border: 2px solid green;*/
+    margin-left: 23px;   
 }
 
 #machine
 {
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 #row1
@@ -148,18 +143,15 @@ margin: 0 auto;
     width: 360px;
     margin: 0 auto;
     display: flex;
-    /*flex-wrap: wrap;*/
     position: absolute;
     top: 277px;
     margin-left: 35px;
-    
-    /*z-index:2;*/
 }
 
 .delta-mud
 {
-width:70px;
-height: 150px;
+    width:70px;
+    height: 150px;
 }
 
 
