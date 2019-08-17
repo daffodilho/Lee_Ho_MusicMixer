@@ -4,10 +4,29 @@
 
 
 	const sodaCan = document.querySelector(".can"),
-		  dropZone =  document.querySelectorAll("#dropzone");
+		  dropZone =  document.querySelectorAll("#dropzone"),
+		  resetButton = document.querySelector("#reset"),
+		  popupButton = document.querySelector("#popup"),
+		  lightBox = document.querySelector(".lightbox"),
+		  closeButton = document.querySelector(".closebox");
+
 
 	let draggablePieces = sodaCan.querySelectorAll("img");
 
+
+
+	function reFresh(){
+		location.reload();
+	}
+
+	function showLightbox(){
+		lightBox.classList.add("show-lightbox");
+
+	}
+
+	function closeLightbox(){
+		lightBox.classList.remove("show-lightbox");
+	}
 
 	draggablePieces.forEach(piece => {
         piece.addEventListener("dragstart", function(e){
@@ -38,25 +57,28 @@
 		});
 	
 			zone.addEventListener("drop", function(e) {
-            	e.preventDefault(); // don't do your default behaviour,
-            	// instead, do the following:
-            
+            	e.preventDefault(); 
+
             	console.log('you dropped sumpin on me');
 
+            
             	const currentDrop = document.querySelector(`img[data-drop="${e}"]`); //this data-drop// //`audio[data-key=`
 
-            
+            	
 
 			
 				let draggablePieces = e.dataTransfer.getData("text/plain");
             	console.log('you dragged: ', draggablePieces);
-				//e.target.appendChild(document.querySelector(`#${draggablePieces}`));
+
 
 				let newImage = document.createElement("img");
 				newImage.src = document.querySelector(`#${draggablePieces}`).getAttribute("src");
 				e.target.appendChild(newImage);
+				
+		
+				
+				//e.target.removeChild(newImage);
 
-				//debugger;
 
 				let audioDrop = document.querySelector(`#${draggablePieces}`).dataset.drop;
 				let currentAudioClip = document.querySelector((`audio[data-drop="${audioDrop}"]`));
@@ -70,6 +92,9 @@
 			});
 		
 	})
-	
+
+		resetButton.addEventListener("click",reFresh);
+		popupButton.addEventListener("click",showLightbox);
+		closeButton.addEventListener("click",closeLightbox);
 })();
 
