@@ -11,7 +11,7 @@ Here is some text about the app.
 ## Authors
 
 * **Daffodil** - *Designer* *Developer* 
-* **Soyoon Lee** - *Developer* 
+* **Soyoon Lee** - *Developer* *Designer*
 
 
 
